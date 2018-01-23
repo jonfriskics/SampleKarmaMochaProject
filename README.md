@@ -1,4 +1,18 @@
-# samplekarmamochaproject
+# SampleKarmaMochaProject
+
+## Test suite command
+
+`npm run mocha` runs `"NODE_ENV=test mocha 'test/unit/mocha/**/*.spec.js'"`, which starts mocha then searches for any files ending in `.spec.js` files located in `test/mocha/`.
+
+Learners will be prompted to run the standard `npm run test` command in a Project, which runs Karma tests and mocha tests from the standard karma.conf.js
+
+## Steps to pass all tests
+
+1. `@hello-world-exists` - In `src/componenets` rename `HelloWorlds.vue` to `HelloWorld.vue`.
+2. `@hello-world-exists` - In `src/componenets/HelloWorld.vue` modify the msg string from `Welcome to Your Vue.js Application` to `Welcome to Your Vue.js App`.
+3. `@hello-world-renders-correct-contet` - In `src/componenets/HelloWorld.vue` on line 3, replace tag of `h2` surrounding the msg with an `h1`.
+
+# Default Vue CLI README appears below
 
 > A Vue.js project
 
