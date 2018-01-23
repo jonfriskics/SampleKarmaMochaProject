@@ -2,9 +2,15 @@
 
 ## Test suite command
 
-`npm run mocha` runs `"NODE_ENV=test mocha 'test/unit/mocha/**/*.spec.js'"`, which starts mocha then searches for any files ending in `.spec.js` files located in `test/mocha/`.
+`npm run mocha` runs `NODE_ENV=test mocha 'test/unit/mocha/**/*.spec.js'`, which starts mocha then searches for any files ending in `.spec.js` files located in `test/mocha/`.
+
+`npm run unit` runs `cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run`, which starts karma then searches for any files ending in `.spec.js` files located in `test/specs/`.
+
+I have attempted to write the tests in a manner where the mocha tests are running static analysis of the files and the karma tests are testing what renders.
 
 Learners will be prompted to run the standard `npm run test` command in a Project, which runs Karma tests and mocha tests from the standard karma.conf.js
+
+I am open to discussing a better way to handle this.
 
 ## Steps to pass all tests
 
