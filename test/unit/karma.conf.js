@@ -13,6 +13,8 @@ module.exports = function karmaConfig(config) {
     // 2. add it to the `browsers` array below.
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
+
+    /* Add karma-structured-json-reporter('json-result') reporter to list of reporters */
     reporters: ['spec', 'coverage', 'json-result'],
     files: ['./index.js'],
     preprocessors: {
@@ -29,6 +31,9 @@ module.exports = function karmaConfig(config) {
         { type: 'text-summary' }
       ]
     },
+
+    /* Add jsonResultReporter object so we can print json report to karma-result.json file, which our adapter will be
+    reading from. Remember to add karma-result-json file to .gitignore on your official repository*/
     jsonResultReporter: {
       outputFile: 'karma-result.json',
       isSynchronous: true
