@@ -14,9 +14,9 @@ I am open to discussing a better way to handle this.
 
 ## Steps to pass all tests
 
-1. `@hello-world-exists` - In `src/componenets` rename `HelloWorlds.vue` to `HelloWorld.vue`.
-2. `@hello-world-exists` - In `src/componenets/HelloWorld.vue` modify the msg string from `Welcome to Your Vue.js Application` to `Welcome to Your Vue.js App`.
-3. `@hello-world-renders-correct-contet` - In `src/componenets/HelloWorld.vue` on line 3, replace tag of `h2` surrounding the msg with an `h1`.
+1. `@hello-world-exists` - In `src/components` rename `HelloWorlds.vue` to `HelloWorld.vue`.
+2. `@hello-world-renders-correct-contents` - In `src/components/HelloWorld.vue` modify the msg string from `Welcome to Your Vue.js Application` to `Welcome to Your Vue.js App`.
+3. `@hello-world-renders-in-h1` - In `src/components/HelloWorld.vue` on line 3, replace tag of `h2` surrounding the msg with an `h1`.
 
 # Default Vue CLI README appears below
 
